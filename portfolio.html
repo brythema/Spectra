@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Spectra Group</title>
+  <meta name="description" content="The Transformation Gallery. Proof, not promises. Explore Spectra Group's work across Media, Digital, Events, and Business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-prism">
+          <svg viewBox="0 0 32 36" fill="none"><polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/><line x1="16" y1="2" x2="2" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="2" y1="10" x2="2" y2="26" stroke="#06B6D4" stroke-width="1.5"/><line x1="2" y1="26" x2="16" y2="34" stroke="#D97706" stroke-width="1.5"/><line x1="16" y1="34" x2="30" y2="26" stroke="#7C3AED" stroke-width="1.5"/><line x1="30" y1="26" x2="30" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="30" y1="10" x2="16" y2="2" stroke="#06B6D4" stroke-width="1.5"/></svg>
+        </div>
+        <span>SPECTRA<em>GROUP</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Start a Project</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Start a Project</a>
+    </div>
+  </nav>
+
+  <!-- PRISM PROGRESS -->
+  <div class="prism-progress" id="prismProgress">
+    <div class="pp-prism">
+      <svg viewBox="0 0 32 36" fill="none">
+        <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/>
+        <line class="pp-line" data-div="media"    x1="16" y1="2"  x2="2"  y2="10" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="media"    x1="2"  y1="10" x2="2"  y2="26" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="web"      x1="2"  y1="26" x2="16" y2="34" stroke="#06B6D4" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="events"   x1="16" y1="34" x2="30" y2="26" stroke="#D97706" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="events"   x1="30" y1="26" x2="30" y2="10" stroke="#D97706" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="business" x1="30" y1="10" x2="16" y2="2"  stroke="#7C3AED" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="pp-labels">
+      <span data-div="media">Media</span>
+      <span data-div="web">Web & AI</span>
+      <span data-div="events">Events</span>
+      <span data-div="business">Business</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero portfolio-hero">
+    <div class="page-hero-slides">
+      <div class="page-hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1920&q=90')"></div>
+      <div class="page-hero-slide" style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=90')"></div>
+      <div class="page-hero-slide" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=90')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">SPECTRA GROUP — PORTFOLIO</p>
+      <h1 class="page-hero-title">Work that doesn't just show.<br/><em>It stays.</em></h1>
+      <p class="page-hero-sub">Every project is a transformation story. Filter by division to see how we move brands, events, and businesses forward.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar-wrap" id="filterBarWrap">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="media">Creative Media</button>
+      <button class="filter-btn" data-filter="web">Digital Solutions</button>
+      <button class="filter-btn" data-filter="events">Experiences</button>
+      <button class="filter-btn" data-filter="business">Business & Talent</button>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO GALLERY -->
+  <section class="portfolio-gallery" id="gallery">
+    <div class="gallery-grid">
+
+      <!-- Row 1 -->
+      <div class="gallery-item tall" data-filter="media" data-title="AURA Luxury — Brand Campaign" data-client="Fashion & Luxury" data-division="Creative Media" data-stat="Brand visibility +210%" data-challenge="A premium fashion label needed imagery that matched their price point — visuals that made the collection feel inevitable, not aspirational." data-approach="We planned a full editorial shoot with moody studio lighting, deliberate color grading, and a visual language that spoke wealth without shouting it." data-outcome="The campaign launched with 210% higher brand visibility across social and doubled their DM enquiry rate within the first month." style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag media-tag">Creative Media</span>
+          <h4>AURA Luxury Campaign</h4>
+          <p>Fashion & Luxury — Abuja</p>
+          <span class="gi-stat">+210% Brand Visibility</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-filter="events" data-title="TechSummit Lagos — Annual Conference" data-client="Corporate Event" data-division="Spectra Experience" data-stat="4,500+ attendees" data-challenge="A fast-growing tech community needed their annual summit to feel less like a conference and more like an industry-defining moment." data-approach="We designed a fully branded stage environment, managed multi-vendor logistics, and live-produced the event across three simultaneous halls." data-outcome="4,500+ attendees. Sold-out tickets three weeks early. Invited back for 2027." style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag events-tag">Spectra Experience</span>
+          <h4>TechSummit Lagos</h4>
+          <p>Corporate Event</p>
+          <span class="gi-stat">4,500+ Attendees</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-filter="web" data-title="Zuri E-Commerce — Digital Storefront" data-client="Retail Brand" data-division="Digital Solutions" data-stat="+60% Online Sales" data-challenge="A popular retail brand was losing customers at checkout. Their mobile experience was broken and their brand was invisible online." data-approach="We rebuilt the entire storefront from scratch — mobile-first, fast-loading, with product photography integration and a streamlined checkout." data-outcome="60% increase in online sales within 8 weeks. Bounce rate dropped by 45%." style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag web-tag">Digital Solutions</span>
+          <h4>Zuri E-Commerce</h4>
+          <p>Retail Brand</p>
+          <span class="gi-stat">+60% Online Sales</span>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="gallery-item" data-filter="business" data-title="Ade Ola — Artist Branding" data-client="Talent Management" data-division="Business & Talent" data-stat="3 Major Brand Deals" data-challenge="An emerging recording artist had talent but no brand architecture — no clear positioning, inconsistent visuals, no management systems." data-approach="We built his brand identity from scratch, managed his digital presence, and actively pitched him to three relevant brands with tailored decks." data-outcome="3 major brand partnership deals secured. Follower growth of 280% in four months." style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag business-tag">Business & Talent</span>
+          <h4>Ade Ola — Artist Brand</h4>
+          <p>Talent Management</p>
+          <span class="gi-stat">3 Brand Deals Secured</span>
+        </div>
+      </div>
+
+      <div class="gallery-item wide" data-filter="events" data-title="Vero Events — Gala Night" data-client="Private Celebration" data-division="Spectra Experience" data-stat="300 guests, zero hitches" data-challenge="An upscale gala for 300 guests with a three-month lead time, a venue requiring full transformation, and a client with very specific taste." data-approach="We handled venue scouting, full décor and lighting design, entertainment booking, catering coordination, and live event production." data-outcome="300 guests. Zero hitches. Client has booked us for their next two annual galas." style="background-image:url('https://images.unsplash.com/photo-1519671282429-b44b2b8a7a14?w=1000&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag events-tag">Spectra Experience</span>
+          <h4>Vero Gala Night</h4>
+          <p>Private Celebration</p>
+          <span class="gi-stat">300 Guests, Zero Hitches</span>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="gallery-item" data-filter="web" data-title="KoraTech — Web Application" data-client="SaaS / Tech" data-division="Digital Solutions" data-stat="Custom SaaS Dashboard" data-challenge="A fintech startup needed a custom dashboard that could handle complex transaction data while remaining simple enough for non-technical users." data-approach="We designed a clean UI system, built the front-end with full responsiveness, and integrated AI-powered analytics for real-time insight." data-outcome="Launched on schedule. Reduced customer support tickets by 40% through better UX." style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag web-tag">Digital Solutions</span>
+          <h4>KoraTech Dashboard</h4>
+          <p>SaaS / Tech</p>
+          <span class="gi-stat">Custom Web App</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-filter="media" data-title="Nneka's Kitchen — Restaurant Content" data-client="Hospitality" data-division="Creative Media" data-stat="+180% Engagement" data-challenge="A beloved restaurant struggled to translate their food's beauty into social media — the photos looked nothing like the experience." data-approach="We ran a full-day food photography and videography session, developed a consistent visual style guide, and produced 30 content pieces." data-outcome="180% increase in Instagram engagement. Fully booked for 6 weeks after the campaign launched." style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag media-tag">Creative Media</span>
+          <h4>Nneka's Kitchen</h4>
+          <p>Hospitality</p>
+          <span class="gi-stat">+180% Engagement</span>
+        </div>
+      </div>
+
+      <div class="gallery-item tall" data-filter="business" data-title="ClearBridge — Corporate Rebrand" data-client="Branding & PR" data-division="Business & Talent" data-stat="Full Brand Overhaul" data-challenge="A consulting firm had grown significantly but their brand hadn't kept up — their identity was generic, their messaging was unclear." data-approach="We conducted positioning workshops, built a full brand identity system, rewrote their core messaging, and executed a coordinated launch." data-outcome="First week after rebrand: two enterprise-level clients attributed their decision to approach ClearBridge directly to the new identity." style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag business-tag">Business & Talent</span>
+          <h4>ClearBridge Rebrand</h4>
+          <p>Branding & PR</p>
+          <span class="gi-stat">Full Identity Overhaul</span>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="gallery-item" data-filter="media" data-title="Eclipse Portraits — Personal Brand Shoot" data-client="Personal Branding" data-division="Creative Media" data-stat="Full Brand Shoot" data-challenge="A senior executive needed a personal brand photo suite that communicated authority, approachability, and distinctiveness simultaneously." data-approach="We scouted three locations, planned the styling, directed the session, and delivered 50 fully edited portrait and action images." data-outcome="Images now appear on LinkedIn, a new speaking profile, and two editorial features." style="background-image:url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=700&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag media-tag">Creative Media</span>
+          <h4>Eclipse Portraits</h4>
+          <p>Personal Branding</p>
+          <span class="gi-stat">Brand Photography Suite</span>
+        </div>
+      </div>
+
+      <div class="gallery-item wide" data-filter="media" data-title="Spectra X — Music Video Production" data-client="Music & Entertainment" data-division="Creative Media" data-stat="1M+ Views" data-challenge="An artist needed a music video that felt cinematic on a lean budget — something that would perform on YouTube and Instagram simultaneously." data-approach="We storyboarded every shot, secured three distinct locations in one day, and produced the final cut with color-graded mastery." data-outcome="1 million views in 12 days. Featured in two music blogs. Artist signed a distribution deal weeks later." style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&q=85')">
+        <div class="gi-overlay">
+          <span class="gi-tag media-tag">Creative Media</span>
+          <h4>Music Video Production</h4>
+          <p>Music & Entertainment</p>
+          <span class="gi-stat">1M+ Views</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project detail">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lightbox-inner">
+      <div class="lb-image-side">
+        <img id="lbImage" src="" alt="" />
+      </div>
+      <div class="lb-content-side">
+        <div class="lb-tag-wrap"><span class="lb-division-tag" id="lbTag"></span></div>
+        <h2 id="lbTitle"></h2>
+        <p class="lb-client" id="lbClient"></p>
+        <div class="lb-stat-badge" id="lbStatBadge"></div>
+        <div class="lb-section">
+          <h5>The Challenge</h5>
+          <p id="lbChallenge"></p>
+        </div>
+        <div class="lb-section">
+          <h5>The Spectra Approach</h5>
+          <p id="lbApproach"></p>
+        </div>
+        <div class="lb-section">
+          <h5>The Outcome</h5>
+          <p id="lbOutcome"></p>
+        </div>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.5rem; display:inline-flex;">Start Your Project →</a>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+  <!-- BOTTOM CTA -->
+  <section class="portfolio-cta">
+    <div class="container">
+      <h2>Ready to be our next transformation?</h2>
+      <a href="contact.html" class="btn-primary">Start Your Project →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 32 36" fill="none"><polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1" fill="none"/><line x1="16" y1="2" x2="2" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="2" y1="10" x2="2" y2="26" stroke="#06B6D4" stroke-width="1.5"/><line x1="2" y1="26" x2="16" y2="34" stroke="#D97706" stroke-width="1.5"/><line x1="16" y1="34" x2="30" y2="26" stroke="#7C3AED" stroke-width="1.5"/><line x1="30" y1="26" x2="30" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="30" y1="10" x2="16" y2="2" stroke="#06B6D4" stroke-width="1.5"/></svg>
+          <span>SPECTRA<em>GROUP</em></span>
+        </div>
+        <p>Building Africa's Influence.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-3.5a2.5 2.5 0 0 1 5 0V17M11 10v7"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>The Group</h5>
+          <a href="services.html#media">Spectra Media</a>
+          <a href="services.html#business">Business & Talent</a>
+          <a href="services.html#events">Spectra Experience</a>
+          <a href="services.html#web">Web, App & AI</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Start a Project</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:hello@spectragroup.ng">hello@spectragroup.ng</a>
+          <span>Abuja, Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spectra Group. All rights reserved.</span>
+      <span>Engineered by E³ Technologies</span>
+    </div>
+  </footer>
+
+  <script src="portfolio.js" defer></script>
+  
+</body>
+</html>
