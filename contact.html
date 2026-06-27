@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start a Project — Spectra Group</title>
+  <meta name="description" content="Tell us where you want to go. We'll assemble the right team from across Spectra Group to get you there." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-prism">
+          <svg viewBox="0 0 32 36" fill="none"><polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1.2" fill="none"/><line x1="16" y1="2" x2="2" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="2" y1="10" x2="2" y2="26" stroke="#06B6D4" stroke-width="1.5"/><line x1="2" y1="26" x2="16" y2="34" stroke="#D97706" stroke-width="1.5"/><line x1="16" y1="34" x2="30" y2="26" stroke="#7C3AED" stroke-width="1.5"/><line x1="30" y1="26" x2="30" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="30" y1="10" x2="16" y2="2" stroke="#06B6D4" stroke-width="1.5"/></svg>
+        </div>
+        <span>SPECTRA<em>GROUP</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Start a Project</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Start a Project</a>
+    </div>
+  </nav>
+
+  <!-- PRISM PROGRESS -->
+  <div class="prism-progress" id="prismProgress">
+    <div class="pp-prism">
+      <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/>
+        <line class="pp-line" data-div="media"    x1="16" y1="2"  x2="2"  y2="10" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="media"    x1="2"  y1="10" x2="2"  y2="26" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="web"      x1="2"  y1="26" x2="16" y2="34" stroke="#06B6D4" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="events"   x1="16" y1="34" x2="30" y2="26" stroke="#D97706" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="events"   x1="30" y1="26" x2="30" y2="10" stroke="#D97706" stroke-width="1.5" opacity="0.3"/>
+        <line class="pp-line" data-div="business" x1="30" y1="10" x2="16" y2="2"  stroke="#7C3AED" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="pp-labels">
+      <span data-div="media">Media</span>
+      <span data-div="web">Web & AI</span>
+      <span data-div="events">Events</span>
+      <span data-div="business">Business</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero contact-hero">
+    <div class="page-hero-slides">
+      <div class="page-hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=90')"></div>
+      <div class="page-hero-slide" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=90')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">SPECTRA GROUP — LET'S BUILD</p>
+      <h1 class="page-hero-title">Let's build something<br/><em>worth remembering.</em></h1>
+      <p class="page-hero-sub">Answer a few questions and we'll come back with ideas, not just a quote.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="contact-layout">
+
+    <!-- LEFT PANEL — static info -->
+    <div class="contact-left">
+      <div class="contact-left-inner">
+        <div class="cl-prism">
+          <svg viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="30,4 56,18 56,50 30,64 4,50 4,18" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+            <line x1="30" y1="4"  x2="4"  y2="18" stroke="#2563EB" stroke-width="2" opacity="0.9"/>
+            <line x1="4"  y1="18" x2="4"  y2="50" stroke="#2563EB" stroke-width="2" opacity="0.5"/>
+            <line x1="4"  y1="50" x2="30" y2="64" stroke="#06B6D4" stroke-width="2" opacity="0.9"/>
+            <line x1="30" y1="64" x2="56" y2="50" stroke="#D97706" stroke-width="2" opacity="0.9"/>
+            <line x1="56" y1="50" x2="56" y2="18" stroke="#D97706" stroke-width="2" opacity="0.5"/>
+            <line x1="56" y1="18" x2="30" y2="4"  stroke="#7C3AED" stroke-width="2" opacity="0.9"/>
+          </svg>
+        </div>
+        <h2>Tell us where you want to go.</h2>
+        <p>We'll assemble the right team from across Spectra Group — and come prepared with ideas, not just a quote.</p>
+
+        <div class="cl-divisions">
+          <div class="cl-div cl-media">
+            <span class="cl-div-dot"></span>
+            <div>
+              <strong>Spectra Media</strong>
+              <span>Photography, Videography, Graphics, Content, Livestream</span>
+            </div>
+          </div>
+          <div class="cl-div cl-web">
+            <span class="cl-div-dot"></span>
+            <div>
+              <strong>Web, App & AI</strong>
+              <span>Websites, Apps, AI Integration, UI/UX</span>
+            </div>
+          </div>
+          <div class="cl-div cl-events">
+            <span class="cl-div-dot"></span>
+            <div>
+              <strong>Spectra Experience</strong>
+              <span>Events, Production, Entertainment</span>
+            </div>
+          </div>
+          <div class="cl-div cl-business">
+            <span class="cl-div-dot"></span>
+            <div>
+              <strong>Business & Talent</strong>
+              <span>Strategy, Branding, PR, Talent Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cl-contact-info">
+          <a href="mailto:hello@spectragroup.ng" class="cl-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@spectragroup.ng</span>
+          </a>
+          <a href="https://wa.me/2340000000000" class="cl-contact-item" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span>WhatsApp Us</span>
+          </a>
+          <div class="cl-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Abuja, Nigeria</span>
+          </div>
+        </div>
+
+        <div class="cl-response-note">
+          <div class="cl-rn-dot"></div>
+          <span>We respond within 24 hours — often sooner.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL — Project Builder -->
+    <div class="contact-right">
+
+      <!-- Progress bar -->
+      <div class="pb-progress-bar">
+        <div class="pb-progress-fill" id="pbProgressFill"></div>
+      </div>
+      <div class="pb-step-label" id="pbStepLabel">Step 1 of 4</div>
+
+      <!-- STEP 1: GOAL -->
+      <div class="pb-step active" id="step1">
+        <h3>What are you trying to achieve?</h3>
+        <p>Select the option that best describes your goal.</p>
+        <div class="pb-options">
+          <button class="pb-option" data-value="brand" data-next="2">
+            <span class="pb-option-icon">🎨</span>
+            <div>
+              <strong>Build my brand</strong>
+              <span>Identity, photography, PR, strategy</span>
+            </div>
+          </button>
+          <button class="pb-option" data-value="content" data-next="2">
+            <span class="pb-option-icon">📸</span>
+            <div>
+              <strong>Capture content or media</strong>
+              <span>Photography, video, graphics, livestream</span>
+            </div>
+          </button>
+          <button class="pb-option" data-value="digital" data-next="2">
+            <span class="pb-option-icon">💻</span>
+            <div>
+              <strong>Build a website or digital product</strong>
+              <span>Web, app, AI integration, UI/UX</span>
+            </div>
+          </button>
+          <button class="pb-option" data-value="event" data-next="2">
+            <span class="pb-option-icon">🎤</span>
+            <div>
+              <strong>Plan or produce an event</strong>
+              <span>Corporate, concerts, galas, private</span>
+            </div>
+          </button>
+          <button class="pb-option" data-value="talent" data-next="2">
+            <span class="pb-option-icon">⭐</span>
+            <div>
+              <strong>Manage my talent or career</strong>
+              <span>Representation, partnerships, PR</span>
+            </div>
+          </button>
+          <button class="pb-option" data-value="grow" data-next="2">
+            <span class="pb-option-icon">📈</span>
+            <div>
+              <strong>Grow my business strategically</strong>
+              <span>Marketing, consulting, brand positioning</span>
+            </div>
+          </button>
+          <button class="pb-option pb-option-full" data-value="multiple" data-next="2">
+            <span class="pb-option-icon">🤝</span>
+            <div>
+              <strong>Multiple things — I need a full-spectrum solution</strong>
+              <span>We'll combine divisions into one tailored proposal</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 2: TIMELINE + BUDGET -->
+      <div class="pb-step" id="step2">
+        <h3>Scope and readiness.</h3>
+        <p>Help us understand your timeline and scale.</p>
+
+        <div class="pb-field-label">What's your timeline?</div>
+        <div class="pb-options pb-options-sm">
+          <button class="pb-option" data-field="timeline" data-value="immediately">
+            <div><strong>Immediately</strong><span>This week</span></div>
+          </button>
+          <button class="pb-option" data-field="timeline" data-value="2-4weeks">
+            <div><strong>2–4 Weeks</strong><span>Planning ahead</span></div>
+          </button>
+          <button class="pb-option" data-field="timeline" data-value="1-3months">
+            <div><strong>1–3 Months</strong><span>Building momentum</span></div>
+          </button>
+          <button class="pb-option" data-field="timeline" data-value="exploring">
+            <div><strong>Just Exploring</strong><span>No urgency</span></div>
+          </button>
+        </div>
+
+        <div class="pb-field-label" style="margin-top:2rem;">Budget range (optional)</div>
+        <div class="pb-options pb-options-sm">
+          <button class="pb-option" data-field="budget" data-value="under500k">
+            <div><strong>Under ₦500,000</strong></div>
+          </button>
+          <button class="pb-option" data-field="budget" data-value="500k-2m">
+            <div><strong>₦500k – ₦2M</strong></div>
+          </button>
+          <button class="pb-option" data-field="budget" data-value="2m-5m">
+            <div><strong>₦2M – ₦5M</strong></div>
+          </button>
+          <button class="pb-option" data-field="budget" data-value="above5m">
+            <div><strong>Above ₦5M</strong></div>
+          </button>
+          <button class="pb-option" data-field="budget" data-value="discuss">
+            <div><strong>Prefer to Discuss</strong></div>
+          </button>
+        </div>
+
+        <div class="pb-nav-btns">
+          <button class="pb-back-btn" data-back="1">← Back</button>
+          <button class="pb-next-btn" data-next="3">Continue →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: CONTACT DETAILS -->
+      <div class="pb-step" id="step3">
+        <h3>How do we reach you?</h3>
+        <p>Simple details so we can prepare and get in touch.</p>
+        <div class="pb-form">
+          <div class="pb-input-group">
+            <label for="pb-name">Full Name *</label>
+            <input type="text" id="pb-name" placeholder="Your full name" autocomplete="name" />
+          </div>
+          <div class="pb-input-group">
+            <label for="pb-email">Email Address *</label>
+            <input type="email" id="pb-email" placeholder="you@email.com" autocomplete="email" />
+          </div>
+          <div class="pb-input-group">
+            <label for="pb-phone">Phone / WhatsApp *</label>
+            <input type="tel" id="pb-phone" placeholder="+234 000 000 0000" autocomplete="tel" />
+          </div>
+          <div class="pb-input-group">
+            <label for="pb-brand">Brand / Company Name <span class="optional">(optional)</span></label>
+            <input type="text" id="pb-brand" placeholder="Your company or project name" />
+          </div>
+          <div class="pb-input-group pb-input-full">
+            <label for="pb-extra">Anything else we should know? <span class="optional">(optional)</span></label>
+            <textarea id="pb-extra" rows="3" placeholder="Share any extra context, references, or ideas..."></textarea>
+          </div>
+        </div>
+        <div class="pb-nav-btns">
+          <button class="pb-back-btn" data-back="2">← Back</button>
+          <button class="pb-next-btn" id="buildSummaryBtn" data-next="4">Review My Inquiry →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: SUMMARY + SUBMIT -->
+      <div class="pb-step" id="step4">
+        <h3>Here's what we'll prepare.</h3>
+        <p>Review your inquiry before we send it to the Spectra team.</p>
+        <div class="pb-summary" id="pbSummary">
+          <!-- Populated by JS -->
+        </div>
+        <div class="pb-nav-btns">
+          <button class="pb-back-btn" data-back="3">← Edit</button>
+          <button class="pb-submit-btn" id="pbSubmitBtn">Send My Inquiry ✦</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: SUCCESS -->
+      <div class="pb-step" id="step5">
+        <div class="pb-success">
+          <div class="pb-success-icon">
+            <svg viewBox="0 0 60 60" fill="none">
+              <circle cx="30" cy="30" r="28" stroke="url(#successGrad)" stroke-width="1.5"/>
+              <path d="M18 30l8 8 16-16" stroke="url(#successGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="successGrad" x1="0" y1="0" x2="60" y2="60">
+                  <stop offset="0%" stop-color="#2563EB"/>
+                  <stop offset="50%" stop-color="#06B6D4"/>
+                  <stop offset="100%" stop-color="#7C3AED"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>Your inquiry is on its way.</h3>
+          <p>A member of the Spectra team will review your project and reach out within 24 hours — often sooner. In the meantime, explore our work.</p>
+          <div class="pb-success-links">
+            <a href="portfolio.html" class="btn-primary">View Portfolio →</a>
+            <a href="index.html" class="btn-ghost">Back to Home</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 32 36" fill="none"><polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="white" stroke-width="1" fill="none"/><line x1="16" y1="2" x2="2" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="2" y1="10" x2="2" y2="26" stroke="#06B6D4" stroke-width="1.5"/><line x1="2" y1="26" x2="16" y2="34" stroke="#D97706" stroke-width="1.5"/><line x1="16" y1="34" x2="30" y2="26" stroke="#7C3AED" stroke-width="1.5"/><line x1="30" y1="26" x2="30" y2="10" stroke="#2563EB" stroke-width="1.5"/><line x1="30" y1="10" x2="16" y2="2" stroke="#06B6D4" stroke-width="1.5"/></svg>
+          <span>SPECTRA<em>GROUP</em></span>
+        </div>
+        <p>Building Africa's Influence.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>The Group</h5>
+          <a href="services.html#media">Spectra Media</a>
+          <a href="services.html#web">Web, App & AI</a>
+          <a href="services.html#events">Spectra Experience</a>
+          <a href="services.html#business">Business & Talent</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:hello@spectragroup.ng">hello@spectragroup.ng</a>
+          <span>Abuja, Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spectra Group. All rights reserved.</span>
+      <span>Engineered by E³ Technologies</span>
+    </div>
+  </footer>
+
+  <script src="contact.js" defer></script>
+  
+</body>
+</html>
